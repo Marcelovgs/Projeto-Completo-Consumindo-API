@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=League+Spartan:wght@100..900&display=swap');
+
+
+/* ==============================================
+        VARIAVEIS BASICAS
+============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+:root {
+    --color-primary: #fff;
+    --color-secondary: #e86ed6;
+    --color-tertiary: #777;
+    --color-text: #111;
+    --shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);
+    --transition: all .4s ease-in-out;
+
+    --width-lg: 85%;
+    --width-sm: 95%;
+}
+
+
+
+body {
+    font-family: "Dancing Script", cursive;
+    font-family: "League Spartan", sans-serif;
+    color: var(--color-text);
+    line-height: 1.7;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: var(--color-text);
+}
+
+span {
+    font-size: .9rem;
+}
+
+h1,
+h2h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6srem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--width-lg);
+}
+
+section {
+    /* padding: 2rem 0 3rem; */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ==============================================
+                NAVBAR
+============================================== */
+
+nav {
+    background: var(--color-text);
+    color: var(--color-primary) !important;
+}
+
+
+.logo {
+    color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+.logo div:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.logo div:first-child span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-secondary);
+}
+
+.logo div:last-child {
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .23rem;
+    color: #999;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navlist {
+    display: flex;
+}
+
+nav .navlist li {
+    text-transform: uppercase;
+    font-size: .9rem;
+    cursor: pointer;
+    z-index: 111;
+}
+
+nav .navlist li a {
+    color: var(--color-primary);
+    padding: 2rem;
+    position: relative;
+}
+
+.navlist li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-secondary);
+    height: 0%;
+    width: 100%;
+    border-bottom: .2rem solid var(--color-primary);
+    z-index: -1;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navlist li a:hover::before,
+.navlist li a.active::before {
+    height: 95%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-btn .lnr {
+    font-size: 1.1rem;
+    display: none;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-icons .lnr {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav-icons .lnr:hover {
+    color: var(--color-secondary);
+}
+
+/* ==============================================
+                HOME
+============================================== */
+.home {
+    padding: 0;
+}
+
+.home .slide1 {
+    background: url(images/3.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home .slide2 {
+    background: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.home .swiper-slide {
+    position: relative;
+}
+
+.home .swiper-slide .content {
+    position: absolute;
+    transform: translate(20%, 50%);
+    max-width: 750px;
+}
+
+.home h1 {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.home .content p {
+    margin: 2rem 0 1rem;
+    color: var(--color-tertiary);
+    font-size: 1.5rem;
+}
+
+.home .home-search input {
+    height: 4rem;
+    width: 22rem;
+    border-radius: 3rem;
+    padding: 1rem 1.6rem;
+    padding-left: 1.9rem;
+    font-size: 1rem;
+}
+
+.home .home-search .btn {
+    padding: 1rem 1.6rem;
+    height: 4rem;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0 50% 50% 50%;
+    position: relative;
+    left: -4rem;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.home-search .lnr {
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+
+.home .swiper-button-next.swiper-button-disabled,
+.home .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.home .swiper-button-next::after {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -9rem;
+    right: -3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .swiper-button-prev::after {
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -9rem;
+    right: -3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==============================================
+                SERVICES
+============================================== */
+
+.tittle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tittle h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Dancing Script", cursive;
+    color: var(--color-secondary);
+    display: inline-block;
+    position: relative;
+}
+
+.tittle h2::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    transform: translateY(-50%);
+    width: 17rem;
+    height: .1rem;
+    background: var(--color-secondary);
+    margin-top: -2rem;
+}
+
+.services {
+    background: #f8f8f8;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.services-container .col .info {
+    padding: 1rem 1.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - 3rem);
+    transition: var(--transition);
+    transition-duration: .3s;
+}
+
+.services-container .col h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+    /* color: var(--color-secondary); */
+}
+
+.services-container .col:hover h4 {
+    color: var(--color-secondary);
+}
+
+.services-container .col ul {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-tertiary);
+    font-size: 1.2rem;
+}
+
+.services-container ul .dis {
+    text-decoration: line-through;
+    color: var(--color-secondary);
+}
+
+.services-container .col a {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.services-container .col a:hover {
+
+    color: var(--color-text);
+
+}
+
+.services-container .col:hover .info {
+    background: var(--color-primary);
+    box-shadow: var(--shadow);
+    top: -2.2rem;
+}
+
+.services-container .col:nth-child(2):hover .info,
+.services-container .col:nth-child(4):hover .info {
+    top: 2.2rem;
+}
+
+/* ==============================================
+                SHOP
+============================================== */
+
+.shop{
+    background: url(images/section1.png);
+    margin-top: 3rem;
+    /* padding: 3rem 0; */
+}
+
+.shop .swiper-slide{
+    margin-bottom: 2rem;
+}
+
+.shop .swiper-slide .box{
+    text-align: center;
+}
+
+.shop .swiper-slide .image{
+    padding: 1rem .2rem 2rem;
+    background: var(--color-primary);
+    position: relative;
+
+}
+
+.shop .image img{
+    height: 400px;
+    width: 400px;
+    padding: 2rem;
+    margin: auto;
+    
+}
+
+.shop .swiper-slide .add{
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.shop .swiper-slide .add .lnr{
+    padding: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shop .swiper-slide .info{
+    padding: 2rem 1rem 1rem;
+    z-index: 1;
+    transition: var(--transition);
+    top: -1rem;
+}
+.shop .swiper-slide .info p{
+    color: var(--color-tertiary);
+    font-size: 1.1rem;
+}
+.shop .swiper-slide .info h4{
+    font-weight: 300;
+}
+
+.shop .swiper-slide .info span{
+    color: var(--color-tertiary);
+    font-size: 1rem;
+    }
+
+.shop .swiper-slide:hover .add{
+    opacity: 1;
+    visibility: visible;
+    bottom: -1rem;
+}
+
+.shop .swiper-slide .add .lnr:hover{
+    color: var(--color-secondary);
+    background: var(--color-primary);
+}
+
+.shop .swiper-slide:hover .info{
+    box-shadow: var(--shadow);
+    background: var(--color-primary);
+    top: 0;
+    z-index: 1;
+}
+/* ==============================================
+                PROFISSIONAIS
+============================================== */
+
+.experts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.experts .box .image{
+    position: relative;
+    width: calc(100% - 2rem);
+}
+
+.experts .box .image img{
+    filter: grayscale(1);
+}
+
+.experts .image span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .8);
+    height: 100%;
+    width: 100%;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.experts .box:hover .image span{
+    visibility: visible;
+    opacity: 1;
+}
+
+.experts .box:hover img{
+    filter: grayscale(0);
+}
+
+.experts .image .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    z-index: 1;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.experts .image .social i{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experts .box:hover .social{
+    opacity: 1;
+    bottom: 20%;
+}
+
+.experts .image .social i:hover{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.experts .box .info{
+    padding: 1rem;
+    background: #eee;
+    border: .5rem solid var(--color-primary);
+    width: calc(100% - 2rem);
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+    
+.experts .box .info h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.experts .box .info span{
+    color: var(--color-tertiary);
+    font-size: 1.1rem;
+}
+
+.experts .box:hover .info{
+    top: -1rem;
+}
+
+.experts .box:hover .info h3{
+    color: var(--color-secondary);
+}
+/* ==============================================
+                FOOTER
+============================================== */
+
+footer{
+    box-shadow: var(--shadow);
+    padding: 4rem 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-container .logo div:first-child{
+    color: var(--color-text);
+}
+
+.footer-container .box:first-child p{
+    padding: 1rem 0;
+}
+
+.footer-container .box h4{
+margin-bottom: 1.8rem;
+}
+
+.footer-container .box ul li{
+margin-bottom: .5rem;
+}
+
+.footer-container .box ul li a{
+    color: var(--color-tertiary);
+}
+
+.footer-container .box .newsletter{
+    display: flex;
+    padding: 2rem 0;
+}
+
+.footer-container .box .newsletter input{
+height: 3rem;
+width: 20rem;
+padding: .6rem;
+background: #eee;
+}
+
+.footer-container .newsletter .btn{
+    padding: .6rem;
+    height: 3rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0 50% 50% 50%;
+    position: relative;
+    left: -2rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.footer-container .box .social{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 2rem 0;
+}
+.footer-container .box .social i{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.footer-container .box .social i:hover{
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow);
+}
+
+
+/* ==============================================
+                RESPONSIVIDADE | MOBILE
+============================================== */
+
+
+@media (max-width: 660px){
+    .home h1{
+        font-size: 3rem;
+        margin-top: -300px;
+    }
+    .container{
+        width: var(--width-sm);
+    }
+    .home .swiper-slide .content{
+        transform: translate(0, 70%);
+        text-align: center;
+            
+    }
+    .home .content p{
+        margin: 1rem .5rem;
+        
+    }
+    .home .home-search input{
+        height: 4rem;
+        max-width: 18rem;
+    }
+    .home .-search .btn{
+        height: 3rem;
+        width: 3rem;
+        padding: 1rem;
+        left: -3rem;
+        top: .09rem;
+    }
+
+    .home .swiper-button-next::after,
+    .home .swiper-button-prev::after{
+        top: -15rem;
+        display: none;
+    }
+
+    .services-container,
+    .experts-container{
+        grid-template-columns: 1fr;
+    }
+
+.footer-container{
+    grid-template-columns: 1fr;
+}
+}
+
