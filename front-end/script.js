@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const endpoint = "http://localhost:3000";
+    const endpoint = "https://boticario-api.onrender.com";
 
     fetch(endpoint)
         .then(response => response.json())
