@@ -3,8 +3,7 @@
  O projeto Both Care é uma aplicação front-end desenvolvida para uma loja de cosméticos. Esta aplicação consome uma API back-end para fornecer dados dinâmicos e atualizados sobre os produtos disponíveis na loja. O objetivo do projeto é proporcionar uma experiência de usuário intuitiva e agradável, permitindo que os clientes explorem e comprem produtos de beleza com facilidade.
 
 ## Tecnologias Utilizadas
-Front-end  
-
+Front-end  <br>
 HTML5
 
 CSS3
