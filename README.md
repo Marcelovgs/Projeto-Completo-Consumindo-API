@@ -6,8 +6,11 @@
 Front-end  
 
 HTML5
+
 CSS3
+
 JavaScript (ES6+)
+
 Swiper.js: Biblioteca para criação de sliders e carrosséis interativos
 
 ## Back-end
