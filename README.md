@@ -18,8 +18,6 @@ Mongoose <br>
 
 
 ## Funcionalidades
-Exibição de Produtos: Mostra uma lista de produtos de beleza obtidos através da API do back-end.
-Pesquisa e Filtro: Permite aos usuários pesquisar e filtrar produtos.
-Carrossel Interativo: Utiliza Swiper.js para navegação fácil e intuitiva entre os produtos.
-Responsividade: Design responsivo para uma experiência otimizada em dispositivos móveis e desktops.
-Sistema de Navegação: Inclui um menu de navegação acessível e uma barra de pesquisa para facilitar a localização de produtos.
+Exibição de Produtos: Mostra uma lista de produtos de beleza obtidos através da API do back-end. <br>
+Carrossel Interativo: Utiliza Swiper.js para navegação fácil e intuitiva entre os produtos. <br>
+Responsividade: Design responsivo para uma experiência otimizada em dispositivos móveis e desktops. <br>
