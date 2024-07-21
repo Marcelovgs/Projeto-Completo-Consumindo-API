@@ -14,10 +14,15 @@ JavaScript (ES6+)
 Swiper.js: Biblioteca para criação de sliders e carrosséis interativos
 
 ## Back-end
+
 Node.js
+
 Express.js
+
 MongoDB
+
 Mongoose
+
 
 ## Funcionalidades
 Exibição de Produtos: Mostra uma lista de produtos de beleza obtidos através da API do back-end.
