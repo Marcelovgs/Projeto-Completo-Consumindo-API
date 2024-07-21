@@ -4,23 +4,17 @@
 
 ## Tecnologias Utilizadas
 Front-end  <br>
-HTML5
+HTML5 <br>
+CSS3 <br>
+JavaScript (ES6+) <br>
+Swiper.js: Biblioteca para criação de sliders e carrosséis interativos <br>
 
-CSS3
-
-JavaScript (ES6+)
-
-Swiper.js: Biblioteca para criação de sliders e carrosséis interativos
 
 ## Back-end
-
-Node.js
-
-Express.js
-
-MongoDB
-
-Mongoose
+Node.js <br>
+Express.js <br>
+MongoDB <br>
+Mongoose <br>
 
 
 ## Funcionalidades
