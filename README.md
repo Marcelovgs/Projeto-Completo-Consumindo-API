@@ -23,3 +23,5 @@ Mongoose <br>
 Exibição de Produtos: Mostra uma lista de produtos de beleza obtidos através da API do back-end. <br>
 Carrossel Interativo: Utiliza Swiper.js para navegação fácil e intuitiva entre os produtos. <br>
 Responsividade: Design responsivo para uma experiência otimizada em dispositivos móveis e desktops. <br>
+
+Link da api hospedada no render: https://boticario-api.onrender.com
