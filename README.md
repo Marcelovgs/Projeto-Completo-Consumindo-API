@@ -25,3 +25,4 @@ Carrossel Interativo: Utiliza Swiper.js para navegação fácil e intuitiva entr
 Responsividade: Design responsivo para uma experiência otimizada em dispositivos móveis e desktops. <br>
 
 Link da api hospedada no render: https://boticario-api.onrender.com
+API hospedada em um site free, por favor abra primeiro o link da api para tirala do modo ocioso da hospedagem, e logo após abra o site, obrigado.
