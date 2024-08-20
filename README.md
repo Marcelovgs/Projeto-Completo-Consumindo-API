@@ -26,3 +26,4 @@ Responsividade: Design responsivo para uma experiência otimizada em dispositivo
 
 Link da api hospedada no render: https://boticario-api.onrender.com <br>
 API hospedada em um site free, por favor abra primeiro o link da api para tirala do modo ocioso da hospedagem, e logo após abra o site, obrigado.
+https://projeto-completo-consumindo-api.vercel.app/
