@@ -698,32 +698,126 @@ background: #eee;
 
 
 /* ==============================================
-                RESPONSIVIDADE | MOBILE
+        RESPONSIVIDADE | TABLETS E MONITORES MENORES
 ============================================== */
 
+@media (max-width: 1024px) {
+    .home h1 {
+        font-size: 4rem;
+        margin-top: -150px;
+    }
 
-@media (max-width: 660px){
-    .home h1{
+    .container {
+        width: var(--width-md);
+        /* Ajuste a variável de acordo com o design */
+    }
+
+    .home .swiper-slide .content {
+        transform: translate(0, 60%);
+        text-align: center;
+    }
+
+    .home .content p {
+        margin: 1.5rem 1rem;
+    }
+
+    .home .home-search input {
+        height: 4.5rem;
+        max-width: 24rem;
+    }
+
+    .home .home-search .btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 1rem;
+        left: -3.5rem;
+        top: 0.1rem;
+    }
+
+    .services-container,
+    .experts-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas para tablets */
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 3.5rem;
+        margin-top: -200px;
+    }
+
+    .container {
+        width: var(--width-md);
+        /* Ajuste para monitores menores */
+    }
+
+    .home .swiper-slide .content {
+        transform: translate(0, 65%);
+        text-align: center;
+    }
+
+    .home .content p {
+        margin: 1.25rem 0.75rem;
+    }
+
+    .home .home-search input {
+        height: 4rem;
+        max-width: 20rem;
+    }
+
+    .home .home-search .btn {
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 1rem;
+        left: -3.5rem;
+        top: 0.1rem;
+    }
+
+    .services-container,
+    .experts-container {
+        grid-template-columns: 1fr;
+        /* 1 coluna para dispositivos menores */
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        /* Ajuste para colunas no footer */
+    }
+}
+
+/* ==============================================
+        RESPONSIVIDADE | MOBILE
+============================================== */
+@media (max-width: 660px) {
+    .home h1 {
         font-size: 3rem;
         margin-top: -300px;
     }
-    .container{
+
+    .container {
         width: var(--width-sm);
     }
-    .home .swiper-slide .content{
+
+    .home .swiper-slide .content {
         transform: translate(0, 70%);
         text-align: center;
-            
     }
-    .home .content p{
+
+    .home .content p {
         margin: 1rem .5rem;
-        
     }
-    .home .home-search input{
+
+    .home .home-search input {
         height: 4rem;
         max-width: 18rem;
     }
-    .home .-search .btn{
+
+    .home .home-search .btn {
         height: 3rem;
         width: 3rem;
         padding: 1rem;
@@ -732,18 +826,17 @@ background: #eee;
     }
 
     .home .swiper-button-next::after,
-    .home .swiper-button-prev::after{
+    .home .swiper-button-prev::after {
         top: -15rem;
         display: none;
     }
 
     .services-container,
-    .experts-container{
+    .experts-container {
         grid-template-columns: 1fr;
     }
 
-.footer-container{
-    grid-template-columns: 1fr;
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 }
-}
-
